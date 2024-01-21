@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header #logo {
+            text-transform: uppercase;
+            float: left;
+            display: inline;
+        }
+
+        header #menu-bar {
+            display: none;
+            color: #ffffff;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        header .fa-bars {
+            font-size: 28px;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+            display: inline;
+        }
+
+        header #menu {
+            float: right;
+            display: inline;
+            margin-right: 50px;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+            position: relative;
+        }
+
+        header a:hover {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        header a#register {
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        header #menu-bar span {
+            background: #fff;
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px 0px 5px 0px;
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div id="logo">
+            <h1 class="slide-in-left">Mon Site</h1>
+        </div>
+        <div id="menu-bar">
+            <span class="fa fa-bars"></span>
+        </div>
+        <nav class="slide-in-left">
+            <ul id="menu">
+                <li class="current"><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container slide-in-left">
+    <h1>Bienvenue sur notre site</h1>
+    <p>Découvrez nos services exceptionnels.</p>
+</main>
+
+</body>
+</html>
