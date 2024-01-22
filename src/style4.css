@@ -29,9 +29,9 @@ nav li  {
     margin-right: 20px;
 }
 
-header nav ul li:hover a {
-    color: #ffcc00; /* Couleur de surbrillance - Vous pouvez ajuster cette couleur selon vos préférences */
-    transition: color 0.3s ease; /* Animation de transition pour une apparence plus fluide */
+ nav ul li:hover a {
+    color: #ffcc00;
+    transition: color 0.3s ease;
 }
 
 
@@ -47,17 +47,14 @@ nav a {
     text-align: left;
     padding: 50px;
 }
-.contenu h2{
-    text-align: center;
-}
-h2:hover {
+
+h1:hover {
     color: #ffcc00;
     transition: color 0.3s ease; }
 
-.saut-de-ligne1 {
-    margin-bottom: 200px; /* Ajustez la valeur selon vos préférences */
+h1, h2, h3{
+    text-align: center;
 }
-
 .saut-de-ligne2 {
     margin-bottom: 80px; /* Ajustez la valeur selon vos préférences */
 }

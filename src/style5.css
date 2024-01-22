@@ -1,3 +1,28 @@
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.photo {
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+    margin-bottom: 20px; /* Espace entre les photos */
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px; /* Coins arrondis pour l'esthétique */
+}
+
+.photo.left {
+    margin-right: 20px; /* Espace à droite pour les photos à gauche */
+}
+
+.photo.right {
+    margin-left: 20px; /* Espace à gauche pour les photos à droite */
+}
 
 body {
     margin: 0;
@@ -40,24 +65,4 @@ nav a {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-}
-
-.contenu {
-    color: white;
-    text-align: left;
-    padding: 50px;
-}
-.contenu h2{
-    text-align: center;
-}
-h2:hover {
-    color: #ffcc00;
-    transition: color 0.3s ease; }
-
-.saut-de-ligne1 {
-    margin-bottom: 200px; /* Ajustez la valeur selon vos préférences */
-}
-
-.saut-de-ligne2 {
-    margin-bottom: 80px; /* Ajustez la valeur selon vos préférences */
 }
